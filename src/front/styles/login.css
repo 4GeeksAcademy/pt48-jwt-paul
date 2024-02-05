@@ -1,0 +1,113 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  color: #772af8;
+
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #b391e9;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+} */
+::-webkit-input-placeholder {
+    color: #ff5d9e;
+  }
+  .wrapper-login {
+    position: relative;
+    max-width: 40vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: 3px solid #2a72f8;
+    box-shadow: 0 0 50px 0 #2d2af8;
+    margin: auto;
+    background-color: #385170;
+    align-items: center;
+    border-radius: 20px;
+  }
+  .form-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .title-login {
+    font-size: 2rem;
+    color: #9fd3c7;
+  }
+  .inp-login {
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid #ececec;
+    color: #142d4c;
+    display: flex;
+  }
+  .input-login {
+    border: none;
+    outline: none;
+    background: none;
+    width: 12vw;
+    margin-top: 1rem;
+    padding-right: 0.1rem;
+    font-size: 1rem;
+    color: #ececec;
+  }
+  .submit-login {
+    border: none;
+    outline: none;
+    width: 15vw;
+    margin-top: 2rem;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    border-radius: 40px;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ececec, #142d4c);
+    color: #ececec;
+  }
+  .footer-login {
+    margin-top: 3rem;
+    letter-spacing: 0.5px;
+    font-size: 0.7rem;
+    color: #ececec;
+  }
+  .link-login {
+    color: #9fd3c7;
+    text-decoration: none;
+  }
+  .banner-login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18vw;
+    height: 50vh;
+    background: linear-gradient(to right, #ececec, #142d4c);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%);
+    padding-right: 3rem;
+    text-align: right;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: #142d4c;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .wel_text-login {
+    font-size: 2rem;
+    margin-top: -1.5rem;
+    margin-left: 2rem;
+    color: #142d4c;
+  }
+  
+  .wrapper-left {
+    padding-left: 2rem;
+    width: 17vw;
+  }
+  
