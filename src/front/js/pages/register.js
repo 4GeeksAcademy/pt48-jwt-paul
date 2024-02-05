@@ -26,16 +26,42 @@ export const Register = () => {
     }
     
     return (
-        <form onSubmit={handleSubmit}>
-            <div>
-                <label>Email:</label>
-                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        <div className="container">
+            <div className="row">
+                <div className="col-md-6 col-sm-12 mx-auto">
+                    <form onSubmit={handleSubmit}>
+                        <div className="form-group">
+                            <label htmlFor="exampleInputEmail1">Email address</label>
+                            <input
+                                type="email"
+                                className="form-control"
+                                id="exampleInputEmail1"
+                                aria-describedby="emailHelp"
+                                placeholder="Enter email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="exampleInputPassword1">Password</label>
+                            <input
+                                type="password"
+                                className="form-control"
+                                id="exampleInputPassword1"
+                                placeholder="Password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                            />
+                        </div>
+                        <button type="submit" className="btn btn-primary">
+                            Submit
+                        </button>
+                        <Link to="/login" className="btn btn-link">
+                            Login
+                        </Link>
+                    </form>
+                </div>
             </div>
-            <div>
-                <label>Password:</label>
-                <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-            </div>
-            <button type="submit">Sign Up</button>
-        </form>
+        </div>
     );
 }
